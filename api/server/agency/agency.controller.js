@@ -286,8 +286,6 @@ exports.login = async (req, res) => {
 
     const agency = await Agency.findOne({ email: req.body.email });
 
-    console.log("agency", agency)
-
     if (!agency) {
       const err = new Error();
       err.status = 422;
@@ -310,6 +308,8 @@ exports.login = async (req, res) => {
       code: agency.code,
       flag: agency.flag,
     };
+
+    
 
     const token = jwt.sign(payload, "jsonWebToken");
 
