@@ -12,5 +12,5 @@ module.exports = {
   password: "", // your email password
 
   //secret key
-  secret_key: "", // your secret key
+  secret_key: "my_secret_key", // your secret key
 };
