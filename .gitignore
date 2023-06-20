@@ -1,6 +1,7 @@
 api/node_modules
 api/index2.js
 api/config2.js
+api/util/serverPath.js
 admin/node_modules
 agency/node_modules
 
