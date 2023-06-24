@@ -158,7 +158,7 @@ app.get("/*", function (req, res) {
 });
 
 mongoose.connect(
-  `mongodb+srv://viren:viren45mca@cluster0.mosbeoh.mongodb.net/wave`, // yor mongodb connection string
+  ``, // yor mongodb connection string
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

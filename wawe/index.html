@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html>
+  <!-- Mirrored from meetmighty.com/codecanyon/document/mighty-ui-kit/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 08:48:14 GMT -->
+
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>Wawe Documentation</title>
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="icon" type="image/png" href="images/logob.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/perfectscroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mm.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../../favicon-32x32.html"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../../favicon-96x96.html"
+    />
+    <link rel="manifest" href="https://meetmighty.com/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      h7 {
+        background: none repeat scroll 0 0 #d8d8d8;
+        border-radius: 8px;
+        color: #019cf5;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 700;
+        margin: 18px 0;
+        padding: 5px 15px;
+      }
+
+      a {
+        color: #003beb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper-left">
+      <div class="vt">
+        <div class="upSide">
+          <div class="logo m-auto">
+            <a href="index.html">
+              <img
+                src="images/logob.png"
+                alt="logo"
+                class="img-fluid"
+                width="80"
+            /></a>
+          </div>
+          <div class="nav-wrapper">
+            <nav>
+              <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li>
+                  <a href="#androidstudiowindows">Installation</a>
+                  <!-- <ul class="sub-menu">
+                    <li>
+                      <a href="#androidstudiowindows"
+                        >Android Studio Windows​</a
+                      >
+                    </li>
+                    <li><a href="#setup-ios">Android Studio macOS​</a></li>
+                  </ul> -->
+                </li>
+                <li>
+                  <a href="#Firebase-Configuring">Firebase Configuring</a>
+                </li>
+                <li><a href="#Database-Set-Up">Database Set Up</a></li>
+                <li>
+                  <a href="#3">Admin Set Up</a>
+                  <ul class="sub-menu">
+                    <li><a href="#common-error1">Backend Configuration</a></li>
+                    <li>
+                      <a href="#common-error2">Admin Panel Configuration</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#agency"> Agency Set Up </a>
+                  <ul class="sub-menu">
+                    <li><a href="#config-android">Backend Configuration</a></li>
+                    <li>
+                      <a href="#config-ios">Agency Panel Configuration</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#build-run">Import Project</a></li>
+                <li>
+                  <a href="#2"> Change App Setting </a>
+                  <ul class="sub-menu">
+                    <li><a href="#Change-App-Name">Change App Name</a></li>
+                    <li>
+                      <a href="#Change-Color-Scheme">Change Color Scheme</a>
+                    </li>
+                    <li>
+                      <a href="#Change-Theme-of-Application"
+                        >Change Theme of Application</a
+                      >
+                    </li>
+                    <li><a href="#Change-App-Icon">Change App Icon</a></li>
+                    <li>
+                      <a href="#Change-Splash-Screen">Change Splash Screen</a>
+                    </li>
+                    <li>
+                      <a href="#Change-Package-Name">Change Package Name</a>
+                    </li>
+                    <li>
+                      <a href="#Change-baseUrl-DavKey"
+                        >Change Baseurl And DevKey</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#Build-DebugAPK">Build Debug APK</a></li>
+                <li><a href="#Release-APK">Release APK</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <footer class="vb">
+          <div class="contact-us">Contact Us</div>
+          <div class="">
+            <div class="d-flex justify-content-center">
+              <span class="me-3">
+                <a href="skype:codderlab?chat" target="_blank"
+                  ><img
+                    height="40px"
+                    width="40px"
+                    style="object-fit: contain"
+                    src="images/skype.png"
+                    class="ms-2"
+                /></a>
+                <a
+                  href="https://web.whatsapp.com/send?phone=919909515320"
+                  target="_blank"
+                  ><img
+                    height="40px"
+                    width="40px"
+                    style="object-fit: contain"
+                    src="images/whatsapp.png"
+                    class="ms-2"
+                /></a>
+              </span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div class="wrapper-right">
+      <section id="introduction">
+        <h3><b>Introduction </b></h3>
+        <hr />
+        <div class="content">
+          <p>
+            Wawe is as the name says is dominating and powerful set of complete
+            app templates,ready to use widgets, code snippets i.e. readymade
+            code integration and stunning screens covering many different use
+            cases. Wawe templates are developed with the highest quality, ease
+            of reusing widgets, fast, and completely user-friendly interface.
+            Wawe makes the developer job easy to achieve modern look and feel of
+            the mobile application. It saves your hustle and time to develop a
+            perfect design UI for modern-day-use mobile application.
+          </p>
+        </div>
+        <div class="content">
+          <h3>Server Requirements</h3>
+          <ul>
+            <li>VPS / Dedicated server</li>
+            <li>Node</li>
+            <li>NGNIX (preferred)</li>
+            <li>Mongo DB</li>
+          </ul>
+          <h4 class="section-title">Wawe Preferred Hosting</h4>
+          <ul class="mt-3">
+            <li>Digital ocean</li>
+            <li>AWS</li>
+            <li class="mb-2">We prefer hosting in :</li>
+            <a
+              class="ms-4"
+              href="https://www.digitalocean.com/?refcode=329b8f75a593&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"
+              ><img
+                src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg"
+                alt="DigitalOcean Referral Badge"
+            /></a>
+          </ul>
+        </div>
+      </section>
+
+      <section id="androidstudiowindows" class="doc-section">
+        <h2 class="section-title">
+          Guide to Install and Setup Android Studio:
+        </h2>
+
+        <div class="section-block">
+          <p>
+            In order to start configuring , you need to install Android studio
+            and the 'Java SE Development Kit'. First download the android studio
+            from here
+            <a href="https://developer.android.com/studio/" target="_blank"
+              >Android Studio</a
+            >
+          </p>
+
+          <!-- <div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/0zx_eFyHRU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            
+        </div> -->
+          <h3>Installation Guide:</h3>
+          <h4>Step 1</h4>
+          <p>
+            firstly, Head over to
+            <a
+              href="https://developer.android.com/studio/#downloads"
+              target="_blank"
+              >this link </a
+            >to get the Android Studio executable or zip file.
+          </p>
+          <h4>Step 2</h4>
+          <p>Then click on the download android studio button.</p>
+          <div class="embed-responsive">
+            <img
+              width="876"
+              height="493"
+              src="images/downloadAndroid.png"
+              class="myImage"
+            />
+          </div>
+        </div>
+        <p class="mt-4">
+          Click on the “I have read and agree with the above terms and
+          conditions” checkbox followed by the download button.
+        </p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/terms.png"
+            class="myImage"
+          />
+        </div>
+        <p>
+          Then click on the Save file button in the appear prompt box and the
+          file will start downloading
+        </p>
+        <h4>Step 3</h4>
+        <p>
+          After the download has finished, open the file from downloads and run
+          it. It will prompt the following dialogue box
+        </p>
+
+        <p>Click on Next.</p>
+        <p>
+          In the next prompt, it’ll ask for a path for installation. Choose a
+          path and hit next.
+        </p>
+        <p>
+          <b>Note:</b> The installation path should have the required minimum
+          space.
+        </p>
+        <h4>Step 4</h4>
+        <p>
+          We will start the installation, and once it is completed, it will be
+          like the image shown below.
+        </p>
+        <p>then Click on Next</p>
+        <h4>Step 5</h4>
+        <p>
+          Once “Finish” is clicked, it will ask whether the previous settings
+          need to be imported [if the android studio had been installed
+          earlier], or not.
+        </p>
+        <p>It is better to choose the ‘Don’t import Settings option’.</p>
+        <div>
+          <img
+            width="400"
+            height="200"
+            src="images/import.png "
+            class="myImage"
+          />
+        </div>
+        <p>Click the OK button</p>
+        <h4>Step 6</h4>
+        <p>This will start with Android Studio</p>
+        <div>
+          <img
+            width="500"
+            height="300"
+            src="images/launch.png "
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4">android studio launch photo</p>
+        <p>Meanwhile, we will be looking for the available SDK components.</p>
+        <div>
+          <img width="500" height="300" src="images/SDK.png" class="myImage" />
+        </div>
+        <h4 class="mt-4">Step 7</h4>
+        <p>
+          Once it has found the SDK components, it will redirect to the Welcome
+          dialogue box
+        </p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/welcomeAndroid.png"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4">Click on Next</p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/install type.png"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4">Choose Standard and click on Next.</p>
+        <p>Now choose the theme, whether Light theme another the Dark one.</p>
+        <p>
+          The light one is called the IntelliJ theme, whereas the dark theme is
+          called Darcula.
+        </p>
+        <p>Choose as required..</p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/selectUI.png"
+            class="myImage"
+          />
+        </div>
+        <p>Click on the Next button</p>
+        <h4>Step 4</h4>
+        <p><b>Now it is time to download the SDK components</b></p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/downloadSDK.png"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4">Then click on Finish .</p>
+        <div>
+          <img
+            width="600"
+            height="400"
+            src="images/downloadComponent.png"
+            class="myImage"
+          />
+        </div>
+        <p>So that It has started downloading the components</p>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/components.png"
+            class="myImage"
+          />
+        </div>
+        <p>
+          The Android Studio Is successfully configure. Now it’s time to launch
+          and build apps
+        </p>
+        <p>Last, click on the Finish button to launch it.</p>
+        <h4>Step 4</h4>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/start.png"
+            class="myImage"
+          />
+        </div>
+        <p>
+          Attention reader! Don’t stop learning now. Get hold of all the
+          important Java and Collections concepts with the
+          <a
+            href="https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1"
+            target="_blank"
+            >Fundamentals of Java and Java Collections Course
+          </a>
+          at a student-friendly price and become industry-ready..
+        </p>
+        <p>
+          you are know how to change package name of the app in android studio?
+          <a
+            href="https://codderlab.com/change-package-name-of-app-in-android-studio/"
+            target="_blank"
+          >
+            HERE
+          </a>
+        </p>
+      </section>
+
+      <!-- <section id="androidstudiowindows">
+            <h3>How to Setup Flutter in Android Studio – Windows​​</h3>
+            <hr>
+            <ul>
+                <li>Download Android Studio - <a href="https://developer.android.com/studio/" target="_blank"
+                        rel="noopener">https://developer.android.com/studio/</a>
+                </li>
+                <li>Get the Flutter SDK - <a href="https://flutter.dev/docs/get-started/install" target="_blank"
+                        rel="noopener">https://flutter.dev/docs/get-started/install</a></li>
+                <li>Learn more about Android Studio - <a href="https://developer.android.com/studio/intro/"
+                        target="_blank" rel="noopener">https://developer.android.com/studio/intro/</a></li>
+            </ul>
+            <p><strong>Step 1 : Get the Flutter SDK</strong></p>
+            <p> 1 Download the following installation bundle to get the latest stable release of
+                the Flutter SDK:</p>
+            <p> 2 Extract the zip file and place the contained flutter in the desired
+                installation location for the Flutter SDK (for example, C:\src\flutter; do not
+                install Flutter in a directory like C:\Program Files\ that requires elevated
+                privileges).
+            </p>
+            <p><strong>Step 2 : Update your path</strong><br></p>
+            <p>If you wish to run Flutter commands in the regular Windows console, take these
+                steps to add Flutter to the PATH environment variable:
+                From the Start search bar, enter ‘env’ and select <b>Edit environment variables
+                    for your account.</b>
+                Under <b>User variables </b>check if there is an entry called <b>Path:</b></p>
+            <ul>
+                <li>If the entry exists, append the full path to <b>flutter\bin </b>using ; as a
+                    separator from existing values.</li>
+                <li>If the entry doesn’t exist, create a new user variable named Path with the
+                    full path to <b>flutter\bin</b> as its value.</li>
+            </ul>
+            <p><strong>Important</strong></p>
+            <p>Note that you have to close and reopen any existing console windows for these
+                changes to take effect.</p>
+            <b>You are now ready to run Flutter commands in the Flutter Console!</b>
+            <p><strong>Step 3 : Run flutter doctor</strong><br></p>
+            <p>From a console window that has the Flutter directory in the path (see above), run
+                the following command to see if there are any platform dependencies you need to
+                complete the setup:</p>
+
+            <p>
+            <pre class="lang-cpp"><code>c:\src\flutter>flutter doctor</code></pre>
+            </p>
+            <b>If you find any issue during environment setup, please go online <a
+                    href="https://flutter.dev/docs/get-started/install/windows" target="_blank" rel="noopener">Click
+                    here</a></b>
+        </section> -->
+
+      <section id="setup-linux">
+        <h3><b>Android Studio – Linux​​</b></h3>
+        <hr />
+        <ul>
+          <li>
+            Download Android Studio -
+            <a
+              href="https://developer.android.com/studio"
+              target="_blank"
+              rel="noopener"
+              >https://developer.android.com/studio</a
+            >
+          </li>
+          <li>
+            Get the Flutter SDK -
+            <a
+              href="https://flutter.dev/docs/get-started/install/linux"
+              target="_blank"
+              rel="noopener"
+              >https://flutter.dev/docs/get-started/install/linux</a
+            >
+          </li>
+          <li>
+            Learn more about Android Studio -
+            <a
+              href="https://developer.android.com/studio/intro/"
+              target="_blank"
+              rel="noopener"
+              >https://developer.android.com/studio/intro/</a
+            >
+          </li>
+        </ul>
+        <p><strong>Step 1 : Get the Flutter SDK</strong></p>
+        <ul>
+          <li>
+            Download the following installation bundle to get the latest stable
+            release of the Flutter SDK:
+          </li>
+          <li>
+            Download SDK and extract downloaded file, just double click on that.
+            and just copy extracted folder and paste it to your desired location
+            (for example, Documents\flutter).
+          </li>
+        </ul>
+        <p><strong>Step 2 : Update your path</strong></p>
+        <p><strong>Important</strong></p>
+        <p>
+          Path variable needs to be updated to access “flutter” command from
+          terminal. you can just update path variable for current terminal
+          window only. and if you want to access flutter commands from anywhere
+          in terminal, we need to update SDK path permanently.
+        </p>
+        <p>
+          You’ll <code>probably</code> want to update this variable permanently,
+          so you can run flutter commands in any terminal session. To update
+          PATH variable, we need to open terminal.
+        </p>
+        <ol>
+          <li>
+            Run
+            <code class="language-plaintext highlighter-rouge"
+              >source $HOME/.</code
+            >
+            to refresh the current window, or open a new terminal window to
+            automatically source the file.
+          </li>
+          <li>
+            Verify that the
+            <code class="language-plaintext highlighter-rouge"
+              >flutter/bin</code
+            >
+            directory is now in your PATH by running:
+          </li>
+        </ol>
+        <p>
+          Verify that the
+          <code class="language-plaintext highlighter-rouge">flutter</code>
+          command is available by running:
+        </p>
+        <b>You are now ready to run Flutter commands in the Flutter Console!</b>
+      </section>
+
+      <section id="build-run">
+        <h2 class="sub-title">Importing Android Project</h2>
+        <p></p>
+        <p>
+          To import the app, simply open Android Studio and import/open the
+          template. Make sure to wait for all the processes (the Gradle Build)
+          to complete before continuing to the next step
+        </p>
+        <!-- <p><strong>Step 1 :</strong></p>
+            <div><img src="images/Screenshot_1.png" width="876" height="493" class="myImage"></div>
+            <br> -->
+        <p><strong>Step 1 :</strong></p>
+        <div>
+          <img
+            src="images/Screenshot_2.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <br />
+        <p><strong>Step 2 :</strong></p>
+        <div>
+          <img
+            src="images/Screenshot_3.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <br />
+        <hr />
+        <p><strong>Addition steps </strong></p>
+        <p>
+          Addition steps Sometimes, the Gradle Build fails. In some cases
+          additional components are needed, Android Studio will ask you to do
+          download these additional SDK components in the 'messages' tab, simply
+          follow the instructions provided to install and download the
+          additional components.
+        </p>
+      </section>
+
+      <section id="Change-App-Name">
+        <h2 id="cutomization" class="sub-title">Change App Setting</h2>
+        <h3><b>Change App Name</b></h3>
+        <hr />
+        <p>
+          <b
+            >Below is illustrated how you can change the name of the
+            application.</b
+          >
+        </p>
+        <div>
+          <img
+            src="images/change_app_name.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Change-Color-Scheme">
+        <h3 class="block-title"><b>Change Color Scheme</b></h3>
+        <hr />
+        <p>
+          <b
+            >Below is illustrated how you can change the color of the
+            application.</b
+          >
+        </p>
+        <ul>
+          <li>Go to app->res->values->colors.xml</li>
+          <li>
+            You can change your apps colors to create a custom look. The primary
+            color is the color of the Toolbar, some buttons and headers. The
+            primary dark color is used for e.g. the status bar. get more color
+            from here
+            <a
+              href="https://material.io/guidelines/style/color.html"
+              target="_blank"
+              >material.io</a
+            >
+          </li>
+        </ul>
+
+        <div class="mt-4">
+          <img
+            src="images/change_app_color.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+      <section id="Change-Theme-of-Application">
+        <h3 class="block-title"><b>Change Theme of Application</b></h3>
+        <hr />
+        <p>
+          <b
+            >Below is illustrated how you can change the theme of the
+            application.</b
+          >
+        </p>
+
+        <div class="mt-4">
+          <img
+            src="images/change_app_theme.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Change-App-Icon">
+        <h3 class="block-title"><b>Change App Icon</b></h3>
+        <hr />
+        <p>
+          <b
+            >Now we need to put a png file with your icon named
+            'ic_launcher.png' in the following folders:</b
+          >
+        </p>
+        <ul>
+          <li>
+            this URL will help you resize your images or event create new icon
+            to your app
+            <a
+              href="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher"
+              target="_blank"
+              >Launcher Icon Generator</a
+            >
+          </li>
+        </ul>
+        <div>
+          <img
+            src="images/change_app_icon_android.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <div class="mt-4">
+          <img
+            src="images/change_app_icon.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Change-Splash-Screen">
+        <h3 class="block-title"><b>Change Splash Screen</b></h3>
+        <hr />
+        <p>
+          <b
+            >We need to put a png file with named 'splash.png' in the following
+            folder:</b
+          >
+        </p>
+        <ul>
+          <li>
+            Go to project location->Android source
+            code->Facecast->app->src->main->res->layout
+          </li>
+        </ul>
+        <div>
+          <img
+            src="images/change_splesh_screen.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <br />
+
+        <div>
+          <img
+            src="images/change_splesh_screen_2.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Change-Package-Name">
+        <h3 class="block-title"><b>Change Package Name</b></h3>
+        <hr />
+        <img
+          src="images/change_package_name_android.png"
+          width="876"
+          height="493"
+          class="myImage"
+        />
+        <div class="mt-4">
+          <img
+            src="images/change_package_name.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <!-- <h3><b>Change Package Name Android :</b></h3>
+            <div>
+                
+            </div>
+
+            <h3><b>Change Package Name ios :</b></h3>
+
+            <div>
+                
+            </div> -->
+      </section>
+      <section id="Change-baseUrl-DavKey">
+        <h3 class="block-title"><b>Change BaseUrl And DevKey</b></h3>
+        <hr />
+
+        <div>
+          <img
+            src="images/baseUrl_android.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <div class="mt-4">
+          <img
+            src="images/build_debug_apk_android.png"
+            alt="logo"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Build-DebugAPK">
+        <h2 id="cutomization" class="sub-title">Build Debug APK</h2>
+        <p>
+          APK (Application Package File) is a format used by Android operating
+          systems for distribution and installation. After you build an
+          application, it's quite common to build APK files to be tested across
+          different devices. If the application is developed using Flutter, you
+          can easily build APK files by using flutter build apk command. In this
+          documentation we show you how to build APK files for Android using
+          Flutter. This includes how to set the mode (release, debug, or
+          profile), set the main entry point, split per ABI, set target
+          platforms, set the build name and version, build flavor APK, and
+          obfuscate the code.
+        </p>
+
+        <div>
+          <img
+            src="images/debug_apk_android.png"
+            alt="logo"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+      </section>
+
+      <section id="Release-APK">
+        <h2 id="cutomization">Release APK</h2>
+        <h3>Build and release an Android app​</h3>
+
+        <p><strong>Step 1 :</strong></p>
+        <div>
+          <img
+            src="images/relese_apk_android_1.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4"><strong>Step 2 :</strong></p>
+        <div>
+          <img
+            src="images/relese_apk_android_2.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4"><strong>Step 3 :</strong></p>
+        <div>
+          <img
+            src="images/relese_apk_android_3.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+        <p class="mt-4"><strong>Step 4 :</strong></p>
+        <div>
+          <img
+            src="images/relese_apk_android_4.png"
+            width="876"
+            height="493"
+            class="myImage"
+          />
+        </div>
+
+        <br />
+      </section>
+
+      <section id="Database-Set-Up">
+        <h2 id="cutomization">Database Set Up</h2>
+        <h4 class="mt-4">Step 1 :</h4>
+        <p>Create a mongodb Atlas</p>
+        <li>
+          use this link:
+          <a href="https://account.mongodb.com/account/register" target="_blank"
+            >https://account.mongodb.com/account/register
+          </a>
+        </li>
+        <br />
+        <img src="images/createdb.png" class="myImage" />
+        <ul class="mt-4">
+          <li>Click <b>Sign up with Google.</b></li>
+          <li>
+            Enter one of the following identifiers for your Google account:
+            <ul>
+              <li>your gmail or Google Apps email address</li>
+              <li>the phone number associated with your Google account</li>
+            </ul>
+          </li>
+          <li>Click <b>Next</b></li>
+          <li>Enter the password for your Google account.</li>
+          <li>then Click on<b>Next</b></li>
+          <li>
+            Review and select the checkbox to accept the
+            <b>Terms of Service</b> and the <b>Privacy Policy.</b>
+          </li>
+          <li>then Click on<b>Submit</b></li>
+        </ul>
+        <h4>Step 2 :</h4>
+        <br />
+        <img src="images/agree.png" class="myImage" />
+
+        <img src="images/mogodbquestion.png" class="myImage mt-4" />
+
+        <img src="images/freecluster.png" class="myImage mt-4" />
+
+        <img src="images/createcluster.png" class="myImage mt-4" />
+
+        <img src="images/skip.png" class="myImage mt-4" />
+        <br />
+        <ul class="mt-4">
+          <li>Create Database User</li>
+        </ul>
+        <p class="mt-4">
+          Enter your Username and password then click on <b>create user</b>.
+        </p>
+        <img src="images/mongodbuser.png" class="myImage mt-4" />
+        <ul class="mt-4">
+          <li>Click on <b>Connect</b></li>
+        </ul>
+        <img
+          src="images/connect.png"
+          class="myImage mt-4"
+          width="876"
+          height="493"
+        />
+        <ul class="mt-4">
+          <li>
+            If you don't have MongoDB Compass then Click on
+            <b>I do not have MongoDB Compass</b> and then click on<b>
+              Download Compass</b
+            >
+            and copy Connection String and paste it into notepad.
+          </li>
+        </ul>
+        <img src="images/getConnectionString.png" class="myImage mt-4" />
+        <ul class="mt-4">
+          <li>Open MongoDB Compass and paste your connection string.</li>
+        </ul>
+        <img src="images/compassConnect.png" class="myImage mt-4" />
+        <ul class="mt-4">
+          <li>Click on <b>Create Database</b></li>
+        </ul>
+        <img
+          src="images/craeteDatabase.png"
+          class="myImage mt-4"
+          width="876"
+          height="493"
+        />
+        <ul class="mt-4">
+          <li>
+            Select database and import admins collection.
+            <span class="text-danger"
+              >Note : collection name must be admins</span
+            >
+          </li>
+        </ul>
+        <img
+          src="images/importAdmin.png"
+          class="myImage mt-4"
+          width="876"
+          height="493"
+        />
+        <ul class="mt-4">
+          <li>
+            Create other Collection and import json file that should be given by
+            us.
+            <span class="text-danger"
+              >Note : collection name must be advertisements, locations &
+              settings</span
+            >
+          </li>
+        </ul>
+        <img
+          src="images/createTable.png"
+          class="myImage mt-4"
+          width="876"
+          height="493"
+        />
+        <img src="images/craetetable2.png" class="myImage mt-4" />
+      </section>
+
+      <section id="common-error1">
+        <h2 id="cutomization">Setup your node js Project (backend):</h2>
+        <h5 class="mt-4">Step 1</h5>
+        <p>For install packages (execute in Terminal) <b>npm install</b></p>
+        <img src="images/node 1_LI.jpg" class="myImage" />
+        <h5 class="mt-4">Step 2</h5>
+        <p>
+          Put the MongoDB Copied Connection String in <b> index.js </b> file
+        </p>
+        <img src="images/node 2.png" class="myImage" />
+        <h5 class="mt-4">Step 3</h5>
+        <p>Set up in config file</p>
+        <img src="images/node 3.png" class="myImage" />
+        <div class="mt-4">
+          <p>Set up in serverPath file</p>
+          <img src="images/node 5.png" class="myImage" />
+        </div>
+        <h5 class="mt-4">Step 4</h5>
+        <p>Then run the command in terminal :- <b>npm start</b></p>
+        <img src="images/node 4_LI.jpg" class="myImage" />
+      </section>
+
+      <section id="common-error2">
+        <h2 id="cutomization">Admin Panel Configuration</h2>
+        <h3 class="mt-4">Setup your React.js Project(frontend)</h3>
+        <h5 class="mt-4">Step 1</h5>
+        <p>For install packages (execute in Terminal) <b>npm install</b></p>
+        <img src="images/react 1_LI.jpg" class="myImage" />
+        <h5 class="mt-4">Step 2</h5>
+        <p>Set up in serverPath file</p>
+        <img src="images/react 2.png" class="myImage" />
+
+        <p class="mt-4">Set up of key in admin folder in reducer file</p>
+        <img src="images/react 5.png" class="myImage" />
+        <h5 class="mt-4">Step 3</h5>
+        <p>Then run the command in terminal :- <b> npm start</b></p>
+        <img src="images/react 3_LI.jpg" class="myImage" />
+
+        <h5 class="mt-4">Extra</h5>
+        <p>If you want to change name & logo follow below image</p>
+        <img src="images/react 4_LI.jpg" class="myImage" />
+
+        <h5 class="mt-4">Step 4</h5>
+        <p>Sign in the Admin Panel</p>
+        <img src="images/login.png" class="myImage" />
+        <ul>
+          <li>
+            After Successfully setup of backend or frontend , Use this
+            credentials for login
+          </li>
+          <li>Email : <strong>admin@admin.com</strong></li>
+          <li>Password : <strong>123456</strong></li>
+        </ul>
+      </section>
+
+      <section id="config-android">
+        <h2 id="cutomization">Setup your node js Project (backend):</h2>
+        <h5 class="mt-4">Step 1</h5>
+        <p>For install packages (execute in Terminal) <b>npm install</b></p>
+        <img src="images/node 1_LI.jpg" class="myImage" />
+        <h5 class="mt-4">Step 2</h5>
+        <p>
+          Put the MongoDB Copied Connection String in <b> index.js </b> file
+        </p>
+        <img src="images/node 6.png" class="myImage" />
+        <h5 class="mt-4">Step 4</h5>
+        <p>Then run the command in terminal :- <b>npm start</b></p>
+        <img src="images/node 4_LI.jpg" class="myImage" />
+      </section>
+
+      <section id="config-ios">
+        <h2 id="cutomization">Admin Panel Configuration</h2>
+        <h3 class="mt-4">Setup your React.js Project(frontend)</h3>
+        <h5 class="mt-4">Step 1</h5>
+        <p>For install packages (execute in Terminal) <b>npm install</b></p>
+        <img src="images/react 1_LI.jpg" class="myImage" />
+        <h5 class="mt-4">Step 2</h5>
+        <p>Set up in serverPath file</p>
+        <img src="images/react 2.png" class="myImage" />
+
+        <p class="mt-4">Set up of key in admin folder in reducer file</p>
+        <img src="images/react 5.png" class="myImage" />
+        <h5 class="mt-4">Step 3</h5>
+        <p>Then run the command in terminal :- <b> npm start</b></p>
+        <img src="images/react 3_LI.jpg" class="myImage" />
+
+        <h5 class="mt-4">Extra</h5>
+        <p>If you want to change name & logo follow below image</p>
+        <img src="images/react 4_LI.jpg" class="myImage" />
+
+        <h5 class="mt-4">Step 4</h5>
+        <p>Sign in the Admin Panel</p>
+        <img src="images/login.png" class="myImage" />
+        <ul>
+          <li>
+            After Successfully setup of backend or frontend , Use this
+            credentials for login
+          </li>
+          <li>Email : <strong>admin@admin.com</strong></li>
+          <li>Password : <strong>123456</strong></li>
+        </ul>
+      </section>
+
+      <section id="Firebase-Configuring">
+        <h2 id="cutomization">Firebase Configuring</h2>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/firebase1.png"
+            class="mt-4 myImage"
+          />
+        </div>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/firebase2.png"
+            class="mt-4 myImage"
+          />
+        </div>
+
+        <div class="mTop">
+          <img
+            width="876"
+            height="493"
+            src="images/firebase3.png"
+            class="myImage"
+          />
+        </div>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/firebase4.png"
+            class="myImage mt-4"
+          />
+        </div>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/firebase5.png"
+            class="myImage mt-4"
+          />
+        </div>
+        <div>
+          <img
+            width="876"
+            height="493"
+            src="images/firebasesetupJson.png"
+            class="myImage mt-4"
+          />
+        </div>
+        <h2 id="cutomization" class="mt-4 mb-4">Enter SHA Key</h2>
+        <p>
+          if you did not change the firebase rules some of the app functions
+          will not work like chat or save/change pictures.
+        </p>
+        <p>
+          if you not provide the SH1 key into the firebase project phone login
+          and google login will not work you have to add you SH1 keys for both
+          debug and live mode.
+        </p>
+        <img
+          src="images/changesha1.png	"
+          width="876"
+          height="493"
+          class="myImage mt-4"
+        />
+        <img
+          src="images/changesha2.png"
+          width="876"
+          height="493"
+          class="myImage mt-4"
+        />
+
+        <h2 id="cutomization" class="mt-4">Push Notification Cloud Function</h2>
+        <h4>Step 1:</h4>
+        <p>Go to the Project Setting (refer below image)</p>
+        <img src="images/add app.png" class="myImage" />
+        <h4 class="mt-4">Step 2:</h4>
+        <p class="mt-4">
+          Then Click onCloud Messaging and Copy the server key and paste into
+          notepad (this is use in node js Project [backend])
+        </p>
+        <img src="images/icon.png" class="myImage" />
+      </section>
+
+      <!-- All Code Copy Paste And Class="myImage" In <img> Tag-->
+      <div class="openImages fadeOut_">
+        <div class="mainPage" id="mainPage">
+          <div class="closeBtn" onclick="closes()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="sideBtn" data-num1 onClick="pre()" id="pre">
+            <i class="fa-solid fa-angles-left"></i>
+          </div>
+          <div class="sideBtn" data-num2 onClick="next()" id="next">
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+          <img alt="" id="showImg" class="" style="object-fit: cover" />
+        </div>
+      </div>
+    </div>
+    <script
+      data-cfasync="false"
+      src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/prism.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e9f488f24b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const closes = () => {
+        $(".openImages").removeClass("fadeIn_");
+        $(".openImages").addClass("fadeOut_");
+      };
+
+      // Open Image
+      var g = document.getElementsByClassName("myImage");
+      for (var i = 0, len = g.length; i < len; i++) {
+        (function (idx) {
+          g[i].onclick = function () {
+            if (idx == parseInt(g.length) - 1) {
+              $("#next").addClass("d-none");
+            }
+            if (idx == 0) {
+              $("#pre").addClass("d-none");
+            }
+
+            $("#next").attr("data-num1", idx);
+            $("#pre").attr("data-num2", idx);
+
+            $(".openImages").toggleClass("fadeIn_ fadeOut_");
+            document.getElementById("showImg").src = g[idx].src;
+          };
+        })(i);
+      }
+      // Image Change Next
+      const next = () => {
+        var a = $("#next").attr("data-num1");
+
+        const num = parseInt(a) + parseInt(1);
+        $("#next").attr("data-num1", num);
+        $("#pre").attr("data-num2", num);
+        $("#pre").removeClass("d-none");
+
+        if (num == parseInt(g.length) - 1) {
+          $("#next").addClass("d-none");
+        }
+
+        // console.log(num);
+        // console.log(parseInt(g.length));
+
+        document.getElementById("showImg").src = g[num].src;
+
+        $("#mainPage").addClass(" animate__animated animate__fadeInRight");
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInRight");
+        }, 300);
+      };
+
+      // Image Change Previous
+      const pre = () => {
+        var a = $("#pre").attr("data-num2");
+
+        const num = parseInt(a) - parseInt(1);
+        $("#next").attr("data-num1", num);
+        $("#pre").attr("data-num2", num);
+        $("#next").removeClass("d-none");
+
+        if (num == -1 || num == 0) {
+          console.log(num);
+          $("#pre").addClass("d-none");
+        }
+
+        // console.log(num);
+        // console.log(parseInt(g.length));
+
+        document.getElementById("showImg").src = g[num].src;
+
+        $("#mainPage").addClass(" animate__animated animate__fadeInLeft");
+        setTimeout(() => {
+          $("#mainPage").removeClass(" animate__animated animate__fadeInLeft");
+        }, 300);
+      };
+
+      document.onkeydown = function (event) {
+        console.log(event.key);
+        if (event.key == "ArrowRight") {
+          var a = $("#next").attr("data-num1");
+          const num = parseInt(a) + parseInt(1);
+          if (num != parseInt(g.length)) {
+            next();
+          }
+        } else if (event.key == "ArrowLeft") {
+          var a = $("#next").attr("data-num1");
+          const num = parseInt(a) + parseInt(1);
+          if (num != 1) {
+            pre();
+          }
+        } else if (event.key == "Escape") {
+          closes();
+        }
+      };
+    </script>
+  </body>
+
+  <!-- Mirrored from meetmighty.com/codecanyon/document/mighty-ui-kit/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 08:48:20 GMT -->
+</html>

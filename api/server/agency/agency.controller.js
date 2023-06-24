@@ -5,6 +5,7 @@ const { deleteFile } = require("../../util/deleteFile");
 const fs = require("fs");
 const Cryptr = require("cryptr");
 const crypt = new Cryptr("myTotalySecretKey");
+const bcrypt = require('bcryptjs')
 
 exports.index = async (req, res) => {
   try {
@@ -104,11 +105,13 @@ exports.store = async (req, res) => {
     agency.email = req.body.email;
     agency.code = req.body.code;
     agency.image = req.file.path;
-    agency.password = crypt.encrypt(req.body.password);
+    // agency.password = crypt.encrypt(req.body.password);
+    agency.password = bcrypt.hashSync(req.body.password, 10);
 
     await agency.save();
 
-    agency.password = await crypt.decrypt(agency.password);
+    // agency.password = await crypt.decrypt(agency.password);
+    agency.password = await bcrypt.compare(req.body.password, agency.password)
 
     return res
       .status(200)
@@ -293,7 +296,14 @@ exports.login = async (req, res) => {
       throw err;
     }
 
-    if (crypt.decrypt(agency.password) !== req.body.password) {
+    // if (crypt.decrypt(agency.password) !== req.body.password) {
+    //   const err = new Error();
+    //   err.status = 422;
+    //   err.errors = [{ password: "Password does not match!" }];
+    //   throw err;
+    // }
+    const isEqual = await bcrypt.compare(req.body.password, agency.password);
+    if (!isEqual) {
       const err = new Error();
       err.status = 422;
       err.errors = [{ password: "Password does not match!" }];
@@ -308,6 +318,8 @@ exports.login = async (req, res) => {
       code: agency.code,
       flag: agency.flag,
     };
+
+    console.log(payload)
 
     
 
@@ -358,7 +370,9 @@ exports.changePass = async (req, res) => {
       });
     }
 
-    agency.password = crypt.encrypt(req.body.password);
+    // agency.password = crypt.encrypt(req.body.password);
+    // agency.password = crypt.encrypt(req.body.password);
+    agency.password = bcrypt.hashSync(req.body.password, 10);
 
     await agency.save();
 
